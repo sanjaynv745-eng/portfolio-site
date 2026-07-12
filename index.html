@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanjay N V — Developer Portfolio</title>
+<meta name="description" content="Full-stack developer portfolio — home page.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Soft<span class="logo-tag">Nexis</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-index="01" aria-current="page">Home</a></li>
+      <li><a href="about.html" data-index="02">About</a></li>
+      <li><a href="contact.html" data-index="03">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <div class="title-block">
+    <div class="frame">
+      <span class="corner-mark tl"></span>
+      <span class="corner-mark tr"></span>
+      <span class="corner-mark bl"></span>
+      <span class="corner-mark br"></span>
+
+      <p class="eyebrow">// Developer Portfolio</p>
+      <h1>I build things that hold up under real use.</h1>
+      <p class="lede">Sanjay N V here — a full-stack developer focused on clean interfaces and dependable back ends. This site is Task 1 of the TaskFlow project: a static, responsive portfolio built with plain HTML, CSS, and a bit of JavaScript.</p>
+
+      <div class="actions">
+        <a href="contact.html" class="btn btn-primary">Get in touch</a>
+        <a href="about.html" class="btn btn-ghost">Read the build log</a>
+      </div>
+
+      <dl class="stamp">
+        <div>
+          <dt>Project</dt>
+          <dd>TaskFlow — Task 1</dd>
+        </div>
+        <div>
+          <dt>Scope</dt>
+          <dd>Portfolio site</dd>
+        </div>
+        <div>
+          <dt>Stack</dt>
+          <dd>HTML / CSS / JS</dd>
+        </div>
+        <div>
+          <dt>Status</dt>
+          <dd>In progress</dd>
+        </div>
+      </dl>
+    </div>
+  </div>
+
+  <div class="container">
+    <section id="projects">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <span class="count">03 projects</span>
+      </div>
+      <div class="projects">
+        <article class="project-card">
+          <span class="tag">Task 2–3</span>
+          <h3>TaskFlow — Frontend &amp; API</h3>
+          <p>A task manager that starts as a localStorage-backed MVP and grows into a full REST API.</p>
+          <div class="stack">
+            <span>JavaScript</span><span>Node.js</span><span>Express</span>
+          </div>
+          <a href="#" class="card-link">View repo →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="tag">Task 4</span>
+          <h3>TaskFlow — Database Layer</h3>
+          <p>MongoDB integration for persistent, multi-session task storage.</p>
+          <div class="stack">
+            <span>MongoDB</span><span>Mongoose</span><span>Node.js</span>
+          </div>
+          <a href="#" class="card-link">View repo →</a>
+        </article>
+
+        <article class="project-card">
+          <span class="tag">Task 5–6</span>
+          <h3>TaskFlow Pro — Deployed</h3>
+          <p>Auth, user-specific tasks, and a CI/CD pipeline shipping a live React app.</p>
+          <div class="stack">
+            <span>React</span><span>JWT</span><span>CI/CD</span>
+          </div>
+          <a href="#" class="card-link">View repo →</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="section-head">
+        <h2>Working with</h2>
+        <span class="count">panel view</span>
+      </div>
+      <div class="panel-grid">
+        <div class="panel">
+          <span class="eyebrow">Frontend</span>
+          <ul>
+            <li>HTML5 semantics</li>
+            <li>CSS Grid &amp; Flexbox</li>
+            <li>Responsive, mobile-first layout</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">Backend</span>
+          <ul>
+            <li>Node.js &amp; Express</li>
+            <li>REST API design</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="panel">
+          <span class="eyebrow">Tooling</span>
+          <ul>
+            <li>Git &amp; GitHub</li>
+            <li>Chrome DevTools</li>
+            <li>Netlify / GitHub Pages</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Sanjay N V</span>
+    <span>Built for TaskFlow — Task 1</span>
+  </div>
+</footer>
+
+<script src="scripts/nav.js"></script>
+</body>
+</html>

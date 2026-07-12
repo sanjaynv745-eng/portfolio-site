@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About — Sanjay N V</title>
+<meta name="description" content="About page — background and build log.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav">
+    <a href="index.html" class="logo">Soft<span class="logo-tag">Nexis</span></a>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html" data-index="01">Home</a></li>
+      <li><a href="about.html" data-index="02" aria-current="page">About</a></li>
+      <li><a href="contact.html" data-index="03">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-links">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+</header>
+
+<main>
+  <div class="title-block">
+    <div class="frame">
+      <span class="corner-mark tl"></span>
+      <span class="corner-mark tr"></span>
+      <span class="corner-mark bl"></span>
+      <span class="corner-mark br"></span>
+
+      <p class="eyebrow">// About</p>
+      <h1>From static pages to a deployed full stack.</h1>
+      <p class="lede">A short background, and the build log for how this portfolio site and the TaskFlow project came together, task by task.</p>
+    </div>
+  </div>
+
+  <div class="container">
+    <section id="bio">
+      <div class="section-head">
+        <h2>Background</h2>
+      </div>
+      <div class="panel-grid">
+        <div class="panel" style="grid-column: 1 / -1;">
+          <p>
+            Replace this paragraph with a couple of sentences about yourself — what you're learning,
+            what kind of developer you're becoming, and what drew you to the TaskFlow project. Keep it
+            plain and specific: what you've built, what you're building next, and what you want to
+            build after that.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="build-log">
+      <div class="section-head">
+        <h2>Build log</h2>
+        <span class="count">6 tasks</span>
+      </div>
+      <div class="timeline">
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 1</p>
+          <h3>Developer Portfolio</h3>
+          <p>Environment set up with Git, Node.js, and VS Code; this three-page static site shipped with a responsive nav, grid layout, and media queries, then deployed to GitHub Pages / Netlify.</p>
+        </div>
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 2</p>
+          <h3>TaskFlow Frontend (MVP)</h3>
+          <p>A JavaScript task manager backed by localStorage — the first working version of TaskFlow.</p>
+        </div>
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 3</p>
+          <h3>TaskFlow Backend</h3>
+          <p>A REST API for tasks, replacing localStorage with real server-side endpoints.</p>
+        </div>
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 4</p>
+          <h3>TaskFlow Database</h3>
+          <p>MongoDB integration for persistent storage across sessions and devices.</p>
+        </div>
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 5</p>
+          <h3>TaskFlow Pro</h3>
+          <p>Authentication and user-specific tasks, rebuilt on React with JWT-based sessions.</p>
+        </div>
+        <div class="timeline-entry">
+          <p class="eyebrow">Task 6</p>
+          <h3>TaskFlow Deployed</h3>
+          <p>Tested and shipped through a CI/CD pipeline as a live, production application.</p>
+        </div>
+      </div>
+    </section>
+  </div>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>© 2026 Sanjay N V</span>
+    <span>Built for TaskFlow — Task 1</span>
+  </div>
+</footer>
+
+<script src="scripts/nav.js"></script>
+</body>
+</html>
